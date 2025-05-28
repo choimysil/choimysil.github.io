@@ -5,20 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>삼성생명</title>
-    <link href="./css/samsung_style.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+    <link href="css/samsung_style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"
+        integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
     <script>
         //.mainMenu 마우스오버시 header의 높이가 316px 마우스 아웃시 header 높이 80px
-        $(function () {       
-            $('button').click(function(){
+        $(function () {
+            $('button').click(function () {
                 $('aside').toggleClass('open');
-                if($('aside').hasClass('open')) {
-                    $('aside').stop().animate({right:0},500,'easeInQuad');
-                    $('button').find('img').attr({'src':'./img/aside/btn_close.png', 'alt':'close'});
+                if ($('aside').hasClass('open')) {
+                    $('aside').stop().animate({ right: 0 }, 500, 'easeInQuad');
+                    $('button').find('img').attr({ 'src': './img/aside/btn_close.png', 'alt': 'close' });
                 } else {
-                    $('aside').stop().animate({right:'-220px'},500,'easeOutQuad');
-                    $('button').find('img').attr({'src':'./img/aside/btn_open.png', 'alt':'open'});
+                    $('aside').stop().animate({ right: '-220px' }, 500, 'easeOutQuad');
+                    $('button').find('img').attr({ 'src': './img/aside/btn_open.png', 'alt': 'open' });
                 }
             });
         });
@@ -27,7 +29,7 @@
 
 <body>
     <div class="header">
-        <h1><img src="./img/home/logo-samsung.png" /></h1>
+        <h1><img src="img/home/logo-samsung.png" /></h1>
         <h2>회사소개</h2>
         <div class="menu">
             <ul class="nav">
@@ -98,9 +100,9 @@
         </div>
     </div>
 
-       <!-- 어사이드 -->
+    <!-- 어사이드 -->
     <aside>
-        <a href="#"><img src="./img/aside/photo_review.jpg" alt=""/></a>
+        <a href="#"><img src="./img/aside/photo_review.jpg" alt="" /></a>
         <nav id="asidenav">
             <ul>
                 <li><a href="#">공지사항</a></li>
@@ -109,8 +111,8 @@
                 <li><a href="#">장바구니</a></li>
                 <li><a href="#">관심상품</a></li>
             </ul>
-         </nav>
-         <button><img src="./img/aside/btn_open.png" alt="open"></button>
+        </nav>
+        <button><img src="./img/aside/btn_open.png" alt="open"></button>
     </aside>
     <!-- end 어사이드 -->
 
