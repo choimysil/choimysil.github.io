@@ -1,45 +1,107 @@
-<section class="course-section">
-  <h2>미래경영교육원의 실전 강좌</h2>
-  <p class="course-desc">
-    쇼핑숏폼 수익화부터 AI 사무자동화, 홈페이지 개발까지  
-    배우고 바로 활용하는 디지털 실무 교육을 제공합니다.
-  </p>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>미래경영교육원</title>
 
-  <div class="course-wrap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <div class="course-card">
-      <div class="icon">🎬</div>
-      <h3>쇼핑숏폼 과정</h3>
-      <p>
-        짧은 영상으로 상품을 소개하고  
-        수익화까지 연결하는 실전 콘텐츠 제작 과정입니다.
-      </p>
-      <a href="#" class="course-btn">자세히 보기</a>
-    </div>
+  <!-- 헤더 -->
+  <header class="header">
+    <div class="logo">미래경영교육원</div>
 
-    <div class="course-card">
-      <div class="icon">🤖</div>
-      <h3>AI 활용 사무자동화 완전정복</h3>
-      <p>
-        문서, 엑셀, PPT 반복 업무를  
-        AI와 자동화 도구로 빠르게 처리하는 핵심 과정입니다.
-      </p>
-      <a href="#" class="course-btn">자세히 보기</a>
-    </div>
+    <nav class="nav">
+      <a href="#about">학원소개</a>
+      <a href="#course">강좌안내</a>
+      <a href="#map">찾아오시는길</a>
+      <a href="구글폼주소" target="_blank">상담신청</a>
+    </nav>
 
-    <div class="course-card">
-      <div class="icon">💻</div>
-      <h3>홈페이지 개발 과정</h3>
-      <p>
-        HTML, CSS, JavaScript 기초부터  
-        실제 홍보형 홈페이지 제작까지 배우는 실무 과정입니다.
-      </p>
-      <a href="#" class="course-btn">자세히 보기</a>
-    </div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </header>
 
+  <!-- 모바일 메뉴 -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">학원소개</a>
+    <a href="#course">강좌안내</a>
+    <a href="#map">찾아오시는길</a>
+    <a href="구글폼주소" target="_blank">상담신청</a>
   </div>
 
-  <div class="course-cta">
-    <a href="구글폼주소" target="_blank">상담신청 바로가기</a>
-  </div>
-</section>
+  <!-- 메인 배경 -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>실무 중심 디지털 교육</h1>
+      <p>
+        쇼핑숏폼 · AI 사무자동화 · 홈페이지 개발까지  
+        배우고 바로 활용하는 실전 교육
+      </p>
+
+      <a href="구글폼주소" target="_blank" class="main-btn">
+        상담신청 바로가기
+      </a>
+    </div>
+  </section>
+
+  <!-- 학원소개 -->
+  <section id="about" class="about">
+    <h2>학원소개</h2>
+    <p>
+      미래경영교육원은 실무 중심의 디지털 교육을 제공하며  
+      AI, 자동화, 콘텐츠 제작 등 최신 기술을 쉽게 배우고  
+      바로 활용할 수 있도록 돕습니다.
+    </p>
+  </section>
+
+  <!-- 강좌 -->
+  <section id="course" class="course-section">
+    <h2>실전 강좌 안내</h2>
+
+    <div class="course-wrap">
+
+      <div class="course-card">
+        <div class="icon">🎬</div>
+        <h3>쇼핑숏폼 과정</h3>
+        <p>짧은 영상으로 상품을 홍보하고 수익화까지 연결하는 과정</p>
+      </div>
+
+      <div class="course-card">
+        <div class="icon">🤖</div>
+        <h3>AI 사무자동화</h3>
+        <p>문서, 엑셀, PPT 업무를 자동화하는 실무 과정</p>
+      </div>
+
+      <div class="course-card">
+        <div class="icon">💻</div>
+        <h3>홈페이지 개발</h3>
+        <p>기초부터 실제 홈페이지 제작까지 배우는 과정</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 지도 -->
+  <section id="map" class="map">
+    <h2>찾아오시는 길</h2>
+
+    <iframe 
+      src="https://maps.google.com/maps?q=서울&t=&z=13&ie=UTF8&iwloc=&output=embed">
+    </iframe>
+  </section>
+
+  <!-- 푸터 -->
+  <footer>
+    <p>© 미래경영교육원</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("mobileMenu").classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
